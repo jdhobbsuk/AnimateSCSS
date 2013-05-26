@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import 'libs/animateCSS/_config';
+
+h1 {
+	@include animation(fadeInDown);
+	@include duration(1s);
+	
+	background-color: #123;
+	color: #fff;
+	text-align: center;
+	display: block;
+	width: 250px;
+	line-height: 1.5;
+	margin: 1em auto;
+	font-size: 30px;
+	font-family: Arial;
+	padding: .3em;
+	border-radius: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

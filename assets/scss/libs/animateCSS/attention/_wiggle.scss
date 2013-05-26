@@ -1,0 +1,20 @@
+$wiggle_start: 9;
+$wiggle_decrease: 1;
+
+@-webkit-keyframes wiggle {
+    0% { -webkit-transform: skewX(#{$wiggle_start}deg); }
+    10% { -webkit-transform: skewX(-#{$wiggle_start - $wiggle_decrease}deg); }
+    20% { -webkit-transform: skewX(#{$wiggle_start - ($wiggle_decrease * 2)}deg); }
+    30% { -webkit-transform: skewX(-#{$wiggle_start - ($wiggle_decrease * 3)}deg); }
+    40% { -webkit-transform: skewX(#{$wiggle_start - ($wiggle_decrease * 4)}deg); }
+    50% { -webkit-transform: skewX(-#{$wiggle_start - ($wiggle_decrease * 5)}deg); }
+    60% { -webkit-transform: skewX(#{$wiggle_start - ($wiggle_decrease * 6)}deg); }
+    70% { -webkit-transform: skewX(-#{$wiggle_start - ($wiggle_decrease * 7)}deg); }
+    80% { -webkit-transform: skewX(#{$wiggle_start - ($wiggle_decrease * 8)}deg); }
+    90% { -webkit-transform: skewX(#{$wiggle_start - ($wiggle_decrease * 9)}deg); }
+	100% { -webkit-transform: skewX(#{$wiggle_start - ($wiggle_decrease * 9)}deg); }
+}
+
+.wiggle {
+	@include animation(wiggle);
+}

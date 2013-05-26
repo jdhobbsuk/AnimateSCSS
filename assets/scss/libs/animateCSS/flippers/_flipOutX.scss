@@ -1,0 +1,60 @@
+$flip_amount: 400px;
+
+@-webkit-keyframes flipOutX {
+    0% {
+        -webkit-transform: perspective($flip_amount) rotateX(0deg);
+        opacity: 1;
+    }
+	100% {
+        -webkit-transform: perspective($flip_amount) rotateX(90deg);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes flipOutX {
+    0% {
+        -moz-transform: perspective($flip_amount) rotateX(0deg);
+        opacity: 1;
+    }
+	100% {
+        -moz-transform: perspective($flip_amount) rotateX(90deg);
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes flipOutX {
+    0% {
+        -ms-transform: perspective($flip_amount) rotateX(0deg);
+        opacity: 1;
+    }
+	100% {
+        -ms-transform: perspective($flip_amount) rotateX(90deg);
+        opacity: 0;
+    }
+}
+
+@-o-keyframes flipOutX {
+    0% {
+        -o-transform: perspective($flip_amount) rotateX(0deg);
+        opacity: 1;
+    }
+	100% {
+        -o-transform: perspective($flip_amount) rotateX(90deg);
+        opacity: 0;
+    }
+}
+
+@keyframes flipOutX {
+    0% {
+        transform: perspective($flip_amount) rotateX(0deg);
+        opacity: 1;
+    }
+	100% {
+        transform: perspective($flip_amount) rotateX(90deg);
+        opacity: 0;
+    }
+}
+
+.flipOutX {
+	@include animation(flipOutX);
+}

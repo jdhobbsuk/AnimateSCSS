@@ -1,0 +1,45 @@
+/*============================================*\
+	| Mixins to allow custom values of
+	| durations & delays
+\*============================================*/
+
+// Variable to declare all vendor prefixes
+$prefixes: webkit moz o;
+
+/* Set the animation duration */
+@mixin duration($duration: 1s){
+	@each $vendor in $prefixes {
+		-#{$vendor}-animation-duration: $duration;
+		-#{$vendor}-animation-fill-mode: both;
+	}
+	animation-duration: $duration;
+	animation-fill-mode: both;
+}
+
+/* Choose the stock animation */
+@mixin animation($name: fadeIn){
+	@each $vendor in $prefixes {
+		-#{$vendor}-animation-name: $name;
+	}
+	animation-name: $name;
+	
+	@if $name == lightSpeedIn {
+		@each $vendor in $prefixes {
+			-#{$vendor}-animation-timing-function: ease-out;
+		}
+	}
+	
+	@if $name == lightSpeedOut {
+		@each $vendor in $prefixes {
+			-#{$vendor}-animation-timing-function: ease-in;
+		}
+	}
+}
+
+/* Apply a delay to the animation */
+@mixin delay($delay: 1s){
+	@each $vendor in $prefixes {
+		-#{$vendor}-animation-delay: $delay;
+	}
+	animation-delay: $delay;
+}

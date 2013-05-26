@@ -1,0 +1,111 @@
+/*----------------------------------------------------------------------------------------*\
+ * AnimateSCSS
+ *
+ * Author	: Jason Hobbs
+ * Website	: http://thecodezombie.co.uk
+ * GitHub	: https://github.com/thecodezombie/animateSCSS/
+ 
+ * Original Author  : Dan Eden
+ * Website			: http://daneden.me/
+ * GitHub			: https://github.com/daneden/animate.css
+ *
+ * This work is licensed under a the DBAD license: http://www.dbad-license.org/
+\*----------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------*\
+ * Mixins:
+ * animation - which animation you want to apply
+ * duration  - how long it should last for
+ * delay     - how long before the animation starts
+
+\*---------------------------------------------------*/
+@import 'mixins';
+
+/*---------------------------------------------------*\
+ * Animations:
+ * Animations marked with a $ have a variable inside
+ * which can be used to amend the preset values.
+ *
+ * Note: You don't need the 'Big' variants in Fading
+ * as the variables allow you to choose the px value.
+ * The default value just changes from 20 to 2000.
+ 
+\*---------------------------------------------------*/
+
+/* ! Attention Seekers */
+//@import 'attention/_flash';
+//@import 'attention/_bounce'; // $
+//@import 'attention/_shake';  // $
+//@import 'attention/_tada';   // $
+//@import 'attention/_swing';  // $
+//@import 'attention/_wobble'; // $
+//@import 'attention/_wiggle'; // $
+//@import 'attention/_pulse';  // $
+
+/* ! Flippers */
+//@import 'flippers/_flip';		// $
+//@import 'flippers/_flipInX';  // $
+//@import 'flippers/_flipOutX'; // $
+//@import 'flippers/_flipInY';  // $
+//@import 'flippers/_flipOutY'; // $
+
+/* ! Fading */
+	/* ! Fading Entrances */
+	//@import 'fading/entrances/_fadeIn';
+	//@import 'fading/entrances/_fadeInUp';    // $
+	@import 'fading/entrances/_fadeInDown';  // $
+	//@import 'fading/entrances/_fadeInLeft';  // $
+	//@import 'fading/entrances/_fadeInRight'; // $
+	
+	/* ! Fading Exits */
+	//@import 'fading/exits/_fadeOut';
+	//@import 'fading/exits/_fadeOutUp';    // $
+	//@import 'fading/exits/_fadeOutDown';  // $
+	//@import 'fading/exits/_fadeOutLeft';  // $
+	//@import 'fading/exits/_fadeOutRight'; // $
+	
+/* ! Bouncing */
+	/* ! Bouncing Entrances */
+	//@import 'bouncing/entrances/_bounceIn';
+	//@import 'bouncing/entrances/_bounceInDown';  // $
+	//@import 'bouncing/entrances/_bounceInUp';    // $
+	//@import 'bouncing/entrances/_bounceInLeft';  // $
+	//@import 'bouncing/entrances/_bounceInRight'; // $
+	
+	/* ! Bouncing Exits */
+	//@import 'bouncing/exits/_bounceOut';
+	//@import 'bouncing/exits/_bounceOutDown';   // $
+	//@import 'bouncing/exits/_bounceOutUp';     // $
+	//@import 'bouncing/exits/_bounceOutLeft';   // $
+	//@import 'bouncing/exits/_bounceOutRight';  // $
+	
+/* ! Rotating */
+	/* ! Rotating Entrances */
+	//@import 'rotating/entrances/_rotateIn';          // $
+	//@import 'rotating/entrances/_rotateInDownLeft';  // $
+	//@import 'rotating/entrances/_rotateInDownRight'; // $
+	//@import 'rotating/entrances/_rotateInUpLeft';    // $
+	//@import 'rotating/entrances/_rotateInUpRight';   // $
+	
+	/* ! Rotating Exits */
+	//@import 'rotating/exits/_rotateOut';          // $
+	//@import 'rotating/exits/_rotateOutDownLeft';  // $
+	//@import 'rotating/exits/_rotateOutDownRight'; // $
+	//@import 'rotating/exits/_rotateOutUpLeft';    // $
+	//@import 'rotating/exits/_rotateOutUpRight';   // $
+
+/* ! Rolling */
+	/* ! Rolling Entrances */
+	//@import 'rolling/entrances/_rollInLeft';
+	//@import 'rolling/entrances/_rollInRight';
+	
+	/* ! Rolling Exits */
+	//@import 'rolling/exits/_rollOutLeft';
+	//@import 'rolling/exits/_rollOutRight';
+
+/* ! Lightspeed */
+//@import 'lightspeed/_lightSpeedIn';
+//@import 'lightspeed/_lightSpeedOut';
+
+/* ! Specials */
+//@import 'specials/_hinge';

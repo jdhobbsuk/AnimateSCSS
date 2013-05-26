@@ -1,0 +1,26 @@
+$bounce_inc: 15px;
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% { -webkit-transform: translateY(0); }
+	40% { -webkit-transform: translateY(-#{$bounce_inc * 2}); }
+	60% { -webkit-transform: translateY(-$bounce_inc); }
+}
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% { -moz-transform: translateY(0); }
+	40% { -moz-transform: translateY(-#{$bounce_inc * 2}); }
+	60% { -moz-transform: translateY(-$bounce_inc); }
+}
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% { -o-transform: translateY(0); }
+	40% { -o-transform: translateY(-#{$bounce_inc * 2}); }
+	60% { -o-transform: translateY(-$bounce_inc); }
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+	40% { transform: translateY(-#{$bounce_inc * 2}); }
+	60% { transform: translateY(-$bounce_inc); }
+}
+
+.bounce {
+	@include animation(bounce);
+}

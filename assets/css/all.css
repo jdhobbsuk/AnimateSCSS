@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------------------*\
+ * AnimateSCSS
+ *
+ * Author	: Jason Hobbs
+ * Website	: http://thecodezombie.co.uk
+ * GitHub	: https://github.com/thecodezombie/animateSCSS/
+ 
+ * Original Author  : Dan Eden
+ * Website			: http://daneden.me/
+ * GitHub			: https://github.com/daneden/animate.css
+ *
+ * This work is licensed under a the DBAD license: http://www.dbad-license.org/
+\*----------------------------------------------------------------------------------------*/
+/*---------------------------------------------------*\
+ * Mixins:
+ * animation - which animation you want to apply
+ * duration  - how long it should last for
+ * delay     - how long before the animation starts
+
+\*---------------------------------------------------*/
+/*============================================*\
+	| Mixins to allow custom values of
+	| durations & delays
+\*============================================*/
+/* Set the animation duration */
+/* Choose the stock animation */
+/* Apply a delay to the animation */
+/*---------------------------------------------------*\
+ * Animations:
+ * Animations marked with a $ have a variable inside
+ * which can be used to amend the preset values.
+ *
+ * Note: You don't need the 'Big' variants in Fading
+ * as the variables allow you to choose the px value.
+ * The default value just changes from 20 to 2000.
+ 
+\*---------------------------------------------------*/
+/* ! Attention Seekers */
+/* ! Flippers */
+/* ! Fading */
+/* ! Fading Entrances */
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -ms-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -ms-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+/* ! Fading Exits */
+/* ! Bouncing */
+/* ! Bouncing Entrances */
+/* ! Bouncing Exits */
+/* ! Rotating */
+/* ! Rotating Entrances */
+/* ! Rotating Exits */
+/* ! Rolling */
+/* ! Rolling Entrances */
+/* ! Rolling Exits */
+/* ! Lightspeed */
+/* ! Specials */
+h1 {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: both;
+  -o-animation-duration: 1s;
+  -o-animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  background-color: #123;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 250px;
+  line-height: 1.5;
+  margin: 1em auto;
+  font-size: 30px;
+  font-family: Arial;
+  padding: .3em;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

@@ -1,0 +1,42 @@
+$swing_inc: 5deg;
+$swing_origin: top center;
+
+@-webkit-keyframes swing {
+	20%, 40%, 60%, 80%, 100% { -webkit-transform-origin: $swing_origin; }
+	20% { -webkit-transform: rotate(#{$swing_inc * 3}); }	
+	40% { -webkit-transform: rotate(-#{$swing_inc * 2}); }
+	60% { -webkit-transform: rotate($swing_inc); }	
+	80% { -webkit-transform: rotate(-$swing_inc); }	
+	100% { -webkit-transform: rotate(0deg); }
+}
+
+@-moz-keyframes swing {
+	20%, 40%, 60%, 80%, 100% { -moz-transform-origin: $swing_origin; }
+	20% { -moz-transform: rotate(#{$swing_inc * 3}); }	
+	40% { -moz-transform: rotate(-#{$swing_inc * 2}); }
+	60% { -moz-transform: rotate($swing_inc); }	
+	80% { -moz-transform: rotate(-$swing_inc); }	
+	100% { -moz-transform: rotate(0deg); }
+}
+
+@-o-keyframes swing {
+	20%, 40%, 60%, 80%, 100% { -o-transform-origin: $swing_origin; }
+	20% { -o-transform: rotate(#{$swing_inc * 3}); }	
+	40% { -o-transform: rotate(-#{$swing_inc * 2}); }
+	60% { -o-transform: rotate($swing_inc); }	
+	80% { -o-transform: rotate(-$swing_inc); }	
+	100% { -o-transform: rotate(0deg); }
+}
+
+@keyframes swing {
+	20%, 40%, 60%, 80%, 100% { transform-origin: $swing_origin; }
+	20% { transform: rotate(#{$swing_inc * 3}); }	
+	40% { transform: rotate(-#{$swing_inc * 2}); }
+	60% { transform: rotate($swing_inc); }	
+	80% { transform: rotate(-$swing_inc); }	
+	100% { transform: rotate(0deg); }
+}
+
+.swing {
+	@include animation(swing);
+}
