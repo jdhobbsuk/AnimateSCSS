@@ -9,8 +9,8 @@ Each animation is split into a partial, animations are controlled through mixins
 I love Animate.css, digging into it properly for the first time back in October '12 when I building [ghostgames.com](http://ghostgames.com/).
 
 But...  
-I needed to experiment, so I downloaded the minified dev version...__48kB__.  
-I needed to edit some of the values, so had to use the full dev version...__61kB__.
+I needed to experiment, so I downloaded the minified dev version... __48kB__.  
+I needed to edit some of the values, so had to use the full dev version... __61kB__.
 
 The filesizes of these dev files were becoming a burden to the development...so I brought in Sass to help.
 
