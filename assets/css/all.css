@@ -120,6 +120,10 @@ h1 {
   -o-animation-fill-mode: both;
   animation-duration: 1s;
   animation-fill-mode: both;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
   background-color: #123;
   color: #fff;
   text-align: center;

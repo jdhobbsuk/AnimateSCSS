@@ -5,6 +5,7 @@
 h1 {
 	@include animation(fadeInDown);
 	@include duration(1s);
+	@include delay(2s);
 	
 	background-color: #123;
 	color: #fff;
