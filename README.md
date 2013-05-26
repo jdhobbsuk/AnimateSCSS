@@ -16,6 +16,8 @@ The filesizes of these dev files were becoming a burden to the development...so 
 
 With _AnimateSCSS_, you've got full access to all of the animations in *Animate.css*, but you __choose__ – on the fly – which are loaded into your CSS file. Not using any of the bouncing animations? Comment them out and your project won't be weighed down by their code. An added benefit is there is no "dev" and "final" version; just make sure any animations you don't use are commented out...you don't need the [custom build](http://daneden.me/animate/build/).
 
+__AnimateSCSS__ makes editing the default animation values easy. Dive into your chosen animation, and at the top are the variables used in the animation. Edit, save, and they're changed throughout...no more copy/pasting through `-webkit-`, `-moz-`, `-o-` and regular.
+
 _AnimateSCSS_ also gives you greater control. The durations and delays of any animation can be controlled with the included mixins. It's also really easy on the eye:
 
     h1 {
