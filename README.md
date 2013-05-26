@@ -14,7 +14,7 @@ I needed to edit some of the values, so had to use the full dev version...__61kB
 
 The filesizes of these dev files were becoming a burden to the development...so I brought in Sass to help.
 
-With _AnimateSCSS_, you've got full access to all of the animations in *Animate.css*, but you __choose__ ? on the fly ? which are loaded into your CSS file. Not using any of the bouncing animations? Comment them out and your project won't be weighed down by their code. An added benefit is there is no "dev" and "final" version; just make sure any animations you don't use are commented out...you don't need the [custom build](http://daneden.me/animate/build/).
+With _AnimateSCSS_, you've got full access to all of the animations in *Animate.css*, but you __choose__ – on the fly – which are loaded into your CSS file. Not using any of the bouncing animations? Comment them out and your project won't be weighed down by their code. An added benefit is there is no "dev" and "final" version; just make sure any animations you don't use are commented out...you don't need the [custom build](http://daneden.me/animate/build/).
 
 _AnimateSCSS_ also gives you greater control. The durations and delays of any animation can be controlled with the included mixins. It's also really easy on the eye:
 
