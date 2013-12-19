@@ -3,9 +3,8 @@
 @import 'libs/animateCSS/_config';
 
 h1 {
-	@include animation(fadeInDown);
-	@include duration(1s);
-	@include delay(2s);
+	@include animate(fadeInDown, 1s, 1s);
+
 	
 	background-color: #123;
 	color: #fff;
