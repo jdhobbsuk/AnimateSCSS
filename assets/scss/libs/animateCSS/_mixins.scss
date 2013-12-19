@@ -43,3 +43,9 @@ $prefixes: webkit moz o;
 	}
 	animation-delay: $delay;
 }
+
+@mixin animate($a, $d, $l) {
+	@include animation($a);
+	@include duration($d);
+	@include delay($l);
+}
